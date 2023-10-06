@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: white;
+    /* background: linear-gradient(0deg, rgba(131,58,180,.35) 0%, rgba(253,29,29,.35) 50%, rgba(252,176,69,.35) 100%); */
+    background: linear-gradient(0deg, rgba(168,110,207,.75) 0%, rgba(252,84,84,.75) 50%, rgba(255,192,105,.75) 100%);
+}
+
+a {
+    /* gradient color */
+    background: linear-gradient(0deg, rgba(168,110,207,1) 0%, rgba(252,84,84,1) 50%, rgba(255,192,105,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* end gradient color */
+}
+
+a button {
+    color: white !important;
+    background-clip: none !important;
+    -webkit-background-clip: none !important;
+    -webkit-text-fill-color: white !important;
+}

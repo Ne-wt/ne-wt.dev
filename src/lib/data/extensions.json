@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Claymores & Companions",
+        "url": "https://github.com/ne-wt/lorekeeper/tree/extension/claymores-and-companions",
+        "description": "A combination of extensions bundled with some unique features such as weapons and gear.",
+        "sub_extensions": [
+            "Pets",
+            "Character Skills",
+            "Levels & Stats"
+        ],
+        "commands": [
+            "php artisan migrate",
+            "php artisan add-site-settings"
+        ]
+        
+    },
+    {
+        "name": "Pets",
+        "url": "https://github.com/ne-wt/lorekeeper/tree/extension/pets",
+        "description": "Adds pets to the game.",
+        "commands": [
+            "php artisan migrate",
+            "php artisan add-site-settings"
+        ]
+    },
+    {
+        "name": "Character Skills",
+        "url": "https://github.com/ne-wt/lorekeeper/tree/extension/character-skills",
+        "description": "Adds dynamic chacter skill trees to the game.",
+        "commands": [
+            "php artisan migrate"
+        ]
+    }
+]
