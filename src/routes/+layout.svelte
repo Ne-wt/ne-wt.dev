@@ -1,12 +1,19 @@
 <script>
-  import { page } from '$app/stores';
   import "../app.css";
+  import { onNavigate } from '$app/navigation';
 
-  import { fly } from 'svelte/transition';
+
+    onNavigate((navigation) => {
+        if (!document.startViewTransition) return;
+
+
+        return new Promise((resolve) => {
+            document.startViewTransition(async () => {
+                resolve();
+                await navigation.complete;
+            });
+        });
+  });
 </script>
 
-{#key $page.url.pathname }
-  <div transition:fly={{ x: -200, duration: 2000}}>
-    <slot />
-  </div>
-{/key}
+<slot />
